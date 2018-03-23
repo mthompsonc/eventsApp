@@ -1,3 +1,11 @@
+body{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .logo {
   max-width: 50px;
   padding: 0.5em;
@@ -22,4 +30,50 @@
 
 .container-app {
   padding: 0;
+}
+
+/*navbar*/
+
+.navbar.topNav {
+  background-image: linear-gradient(to bottom,#6F598E,#6F598E 100%);
+}
+
+.navbar-default .navbar-brand, .topNav .nav a {
+  color: #fff !important;
+}
+
+.topNav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.footer {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  margin: 0;
+  text-align: center;
+}
+
+.footer a{
+  color: #555 !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 5px rgba(0,0,0,.075);
+}
+
+.space {  
+  margin-top: 20px;
+}
+
+@media only screen {
+  .footer .nav>li{
+    display: inline-block !important;
+    width: 20% !important;
+  }
+  .topNav .nav>li{
+    display: inline-block !important;
+    width: 50% !important;
+  }
 }

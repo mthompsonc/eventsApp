@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Grid, Row } from 'react-bootstrap';
 import Home from './Components/Home/Home';
+import SignIn from './Components/SignIn'
 // import EventsAll from './Components/EventsAll.js'
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import './App.css';
@@ -9,7 +10,7 @@ import './App.css';
 const App = () => (
   <Router>
     <div>
-      <Navbar collapseOnSelect>
+      <Navbar collapseOnSelect className="topNav">
         <Navbar.Header>
           <Navbar.Brand>
             <Link to="/">EventsApp</Link>
@@ -27,17 +28,17 @@ const App = () => (
 
       <Route exact path="/" component={Home} />
       <Route path="/registrarse" component={Registrarse} />
-      <Route path="/iniciar-sesion" component={IniciarSesion} />
+      <Route path="/iniciar-sesion" component={SignIn} />
       <Route path="/quienes-somos" component={QuienesSomos} />
       <Route path="/contacto" component={Contacto} />
       <Route path="/ayuda" component={Ayuda} />
       <Route path="/temas" component={Temas} />
       <Route path="/blog" component={Blog} />
 
-      <Navbar collapseOnSelect>       
+      <Navbar collapseOnSelect className="footer">       
           <Nav>
             <NavItem eventKey={1} href="#">
-              <Link to="/quienes-somos">Quienes somos</Link>
+              <Link to="/quienes-somos">Somos</Link>
             </NavItem>
             <NavItem eventKey={2} href="#">
               <Link to="/contacto">Contacto</Link>

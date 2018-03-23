@@ -27,7 +27,7 @@ class Home extends Component {
         return <Col xs={12} sm={6} md={4} key={index} className={`categories ${name}`}  alt={name} onClick={this.getresults}><span className="title">{name}</span></Col>
       });
     return (
-      <Grid fluid>
+      <Grid fluid className="space">
       <Row className="content">
         
         <Upcomingevents />
