@@ -25,6 +25,7 @@ const App = () => (
             </NavItem>
           </Nav>
       </Navbar>
+      <div className="space"></div>
 
       <Route exact path="/" component={Home} />
       <Route path="/registrarse" component={Registrarse} />

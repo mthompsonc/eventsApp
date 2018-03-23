@@ -22,7 +22,7 @@ const AuthExample = () => (
       <ul>
         <li>
         {Login}
-          <Link to="/protected">Protected Page</Link>
+          <Link to="/protected">Iniciar sesión</Link>
         </li>
       </ul>
       <Route path="/login" component={Login} />
@@ -53,11 +53,11 @@ const AuthButton = withRouter(
             fakeAuth.signout(() => history.push("/"));
           }}
         >
-          Sign out
+          Salir
         </button>
       </p>
     ) : (
-      <p>You are not logged in.</p>
+      <p>No estas conectadx</p>
     )
 );
 
@@ -79,6 +79,13 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
   />
 );
 
+
+const users = () => {
+        console.log('hola');
+      let user = this.props.onAddUser;
+      localStorage.setItem('user', user);
+    };
+
 const Protected = () => <h3>Protected</h3>;
 
 class Login extends React.Component {
@@ -88,8 +95,8 @@ class Login extends React.Component {
 
   login = () => {
     fakeAuth.authenticate(() => {
-      this.setState({ redirectToReferrer: true });
-    });
+      this.setState({ redirectToReferrer: true })      
+    })
   };
 
   render() {
@@ -102,12 +109,12 @@ class Login extends React.Component {
 
     return (
       <div>
-        <p>You must log in to view the page at {from.pathname}</p>
+        <p>Ingresa tus datos para ingresar</p>
         <form onSubmit={this.props.onAddUser}>
         <input type= 'text' placeholder = 'Nombre' name='name' />
         <input type= 'email' placeholder = 'Email' name='email' />
       </form>
-        <button onClick={this.login}>Iniciar sesión</button>
+        <button type= 'submit' onClick={this.login}>Iniciar sesión</button>
       </div>
     );
   }
