@@ -1,0 +1,36 @@
+.title{
+  line-height: 2;
+}
+
+.line{
+  border: 0.4px solid #55244B;
+}
+
+.alert{
+  color:#FFFFFF;
+  background-color: #55244B;
+  border-radius: 7px;
+}
+
+.places{
+  width: 10em;
+  margin: 1em;
+  border-radius: 6px;
+  border: 2px solid #55244B;
+  color: #55244B;
+}
+
+.description{
+  line-height: 1.5;
+}
+
+.boxDetails{
+  margin: 2em 1em;
+  border: 1px solid #55244B;
+  border-radius: 6px;
+  padding: 1em 0.5em;
+}
+
+.location{
+  line-height: 2;
+}

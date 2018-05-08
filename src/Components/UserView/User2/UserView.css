@@ -1,0 +1,22 @@
+.profile-photo{
+  width: 15em;
+}
+
+.space{
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.imgEvent{
+  margin-bottom: 1em;
+  margin-top: 1em;
+  width: 30em;
+}
+
+.card{
+  width: 80%;
+  -webkit-box-shadow: 5px 13px 60px -11px rgba(99,99,99,1);
+-moz-box-shadow: 5px 13px 60px -11px rgba(99,99,99,1);
+box-shadow: 5px 13px 60px -11px rgba(99,99,99,1);
+
+}

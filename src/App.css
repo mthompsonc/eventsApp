@@ -32,6 +32,7 @@ body{
   padding: 0;
 }
 
+
 /*navbar*/
 
 .navbar.topNav {
@@ -76,4 +77,34 @@ body{
     display: inline-block !important;
     width: 50% !important;
   }
+
+.nav-items li {
+  font-size: 0.8em;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.nav-items li a {
+  padding: 0.3em;
+}
+
+.nav-user {
+  color: #000;
+  font-size: 1.2em;
+  float: right;
+  margin-right: 0;
+}
+
+.nav-user li {
+  display: inline-block;
+}
+
+.nav-user li a {
+  color: #4C4C4C;
+}
+
+.app {
+  padding: 3.4em 0;
+  text-align: center;
 }

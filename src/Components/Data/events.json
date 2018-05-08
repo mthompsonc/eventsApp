@@ -75,13 +75,12 @@
   {
     "id": "8",
     "name": "Hackgirls - Taller de Asesor Virtual con IBM Cloud",
-    "imgEvent": "",
+    "imgEvent": "https://image.ibb.co/kyZ6xx/Chatbots_Servicios_Atencios_Clientes610.jpg",
     "location": "Infante #1415, Providencia, Santiago.",
     "date":"20-04-2018",
     "hour": "19 hrs.",
     "description": "Crea tu propio asesor virtual el cual simulará una conversación. Podrás crear una aplicación que entienda lenguaje natural y use el aprendizaje automático para responder a los usuarios de una manera que simule una conversación entre humanos.",
-    "category": "",
-    "places": ""
+    "places": "20"
   }
 ]
 }

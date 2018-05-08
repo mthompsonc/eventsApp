@@ -3,16 +3,14 @@ import React, { Component } from 'react';
 import { Row, Col, Grid } from 'react-bootstrap';
 import Navbar from './../Navbar/Navbar';
 import Upcomingevents from './../Upcoming/Upcomingevents';
+import './style.css';
+
 
 const categories = ['UX', 'Mujeres', 'Programación'];
 
 const menu = {
   appName: 'Events App',
-  logoImage: 'http://4.bp.blogspot.com/-d3Lc_Bpm1y4/VKidtotyyEI/AAAAAAAAH68/glouCyRYlts/s1600/eventbrite-thumbnail.png',
-  linksmenu1: {
-    title: 'Config',
-    url: 'http://www.google.cl'
-  }
+  logoImage: 'http://4.bp.blogspot.com/-d3Lc_Bpm1y4/VKidtotyyEI/AAAAAAAAH68/glouCyRYlts/s1600/eventbrite-thumbnail.png'
 }
 
 class Home extends Component {
@@ -29,7 +27,7 @@ class Home extends Component {
     return (
       <Grid fluid className="space">
       <Row className="content">
-        
+        <h3>Proximos Eventos</h3>
         <Upcomingevents />
       </Row>
       </Grid>);
