@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Grid, Row } from 'react-bootstrap';
 import Home from './Components/Home/Home';
+import SignIn from './Components/SignIn'
 import Addevent from './Components/Addevent/Addevent';
 // import EventsAll from './Components/EventsAll.js'
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
@@ -12,6 +13,7 @@ import './App.css';
 const App = () => (
   <Router>
     <div>
+      <Navbar collapseOnSelect className="topNav">
       <Navbar collapseOnSelect fixedTop>
         <Navbar.Header>
           <Navbar.Brand>
@@ -31,10 +33,11 @@ const App = () => (
         </Navbar.Header>       
           
       </Navbar>
+      <div className="space"></div>
 
       <Route exact path="/" component={Home} />
       <Route path="/registrarse" component={Registrarse} />
-      <Route path="/iniciar-sesion" component={IniciarSesion} />
+      <Route path="/iniciar-sesion" component={SignIn} />
       <Route path="/quienes-somos" component={QuienesSomos} />
       <Route path="/contacto" component={Contacto} />
       <Route path="/ayuda" component={Ayuda} />
@@ -42,10 +45,12 @@ const App = () => (
       <Route path="/blog" component={Blog} />
       <Route path="/addevent" component={AddEvent} />
 
+      <Navbar collapseOnSelect className="footer">       
+          <Nav>
       <Navbar collapseOnSelect fixedBottom>       
           <Nav className="nav-items">
             <NavItem eventKey={1} href="#">
-              <Link to="/quienes-somos">Quienes somos</Link>
+              <Link to="/quienes-somos">Somos</Link>
             </NavItem>
             <NavItem eventKey={2} href="#">
               <Link to="/contacto">Contacto</Link>
@@ -113,13 +118,10 @@ const Blog = () => (
   render() {
     return (
         <Grid fluid className="container-app">
-<<<<<<< HEAD
-          <Ho*me />
-          <Addevent />
-=======
+
           <Home />
           <AddEvent />
->>>>>>> añadiendo ventana administrador para añadir/borrar eventos
+añadiendo ventana administrador para añadir/borrar eventos
         </Grid>
     );
   }
